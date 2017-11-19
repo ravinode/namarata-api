@@ -1,5 +1,5 @@
 {
-  "name": "namarate-api",
+  "name": "namrate-api",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -15,5 +15,8 @@
     "lodash": "^4.17.4",
     "mongodb": "^2.2.30",
     "mongoose": "^4.5.9"
+  },
+  "devDependencies": {
+    "@angular/cli": "^1.5.2"
   }
 }
