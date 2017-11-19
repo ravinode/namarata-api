@@ -15,6 +15,10 @@ var Product = mongoose.model('Product', {
   {
     type: String
   },
+  color:
+  {
+    type: String
+  },
   price: {
     type: String
   },
