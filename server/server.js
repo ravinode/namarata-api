@@ -44,7 +44,8 @@ app.post('/create', (req, res) => {
     category: req.body.category,
     size: req.body.size,
     price: req.body.price,
-    sellingprice: req.body.sellingprice
+    sellingprice: req.body.sellingprice,
+    color: req.body.color
   }); 
       product.save().then((doc) => {
       res.send(doc)
@@ -91,7 +92,7 @@ app.patch('/update/:id', (req,res) => {
   res.header("Access-Control-Allow-Origin", "*");
   var id = req.params.id;
   console.log(id);
-   var body = _.pick(req.body, ['name', 'description', 'category','size','price','sellingprice']);
+   var body = _.pick(req.body, ['name', 'description', 'category','size','color','price','sellingprice']);
 
    console.log(body);
 
